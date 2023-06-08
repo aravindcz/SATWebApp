@@ -131,7 +131,8 @@ public class SATResultService implements ISATResultService {
     private SATResult setPassOrFailBasedOnScore(SATResult satResult){
 
         int score = satResult.getScore();
-        if((((float)score/1600)*100)>30)
+
+        if(((((float)score)/1600.0)*100)>30)
             satResult.setPassed(true);
         else satResult.setPassed(false);
 
