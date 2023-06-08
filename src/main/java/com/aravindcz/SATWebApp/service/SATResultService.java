@@ -10,10 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 @Service
@@ -161,13 +158,13 @@ public class SATResultService implements ISATResultService {
         for(SATResult satResult : satResultCopyOnWriteArrayList){
 
             if(satResult.getScore() == previousScore){
-                if(satResult.getName().equals(name))
+                if(satResult.getName().toLowerCase().equals(name.toLowerCase()))
                     return rank;
 
             }
             else {
                 ++rank;
-                if(satResult.getName().equals(name))
+                if(satResult.getName().toLowerCase().equals(name.toLowerCase()))
                     return rank;
                 previousScore = satResult.getScore();
             }
