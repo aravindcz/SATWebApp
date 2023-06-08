@@ -11,5 +11,5 @@ Before running this project, make sure you have the following:
   - Use the following credentials to access the database:
     - Username: root or set your username in application.properties file
     - Password: password or set your password in application.properties file
-  - Once that is done open the repo as a maven project in intellij and run the main class
-  - Use the postman collection provided in the repo to test the endpoints
+ - Once that is done open the repo as a maven project in intellij and run the main class
+ - Use the postman collection provided in the repo to test the endpoints
