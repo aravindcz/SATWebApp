@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "ebaa9acf-fed9-45b0-a573-a0d45134f042",
+		"name": "SATWebApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11116994"
+	},
+	"item": [
+		{
+			"name": "Menu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/menu",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Aravind\",\r\n  \"address\": \"Nisarg Society\",\r\n  \"city\": \"Pune\",\r\n  \"country\": \"India\",\r\n  \"pincode\": \"400001\",\r\n  \"score\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/results",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"results"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Results",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/results",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"results"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rank",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/results/aravind/rank",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"results",
+						"aravind",
+						"rank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"score\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/results/aravind",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"results",
+						"aravind"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Result",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/results/aravind",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"results",
+						"aravind"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
